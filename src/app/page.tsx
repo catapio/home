@@ -3,6 +3,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Hero } from "@/components/sections/Hero";
 import { Products } from "@/components/sections/Products";
+import { Benefits } from "@/components/sections/Benefits";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -47,6 +48,7 @@ export default function Home() {
             <main className="flex-grow">
                 <Hero />
                 <Products />
+                <Benefits />
             </main>
         </div>
     );

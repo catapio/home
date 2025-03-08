@@ -1,6 +1,9 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { useEffect } from "react";
 
 interface ProductCardProps {
     title: string;
@@ -13,6 +16,7 @@ interface ProductCardProps {
     url: string;
     applicationCategory?: string;
     operatingSystem?: string;
+    inView?: boolean;
 }
 
 const statusClasses = {
@@ -38,6 +42,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     url,
     applicationCategory = "BusinessApplication",
     operatingSystem = "Web",
+    inView,
 }) => {
     const isAvailable = status === "active";
     const availabilityStatus = isAvailable
@@ -49,10 +54,11 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     return (
         <article
             className={cn(
-                "bg-white dark:bg-guray-800 rounded-xl shadow-md transition-all duration-300 h-full hover:shadow-lg hover:transform hover:-translate-y-1",
+                "bg-white rounded-xl shadow-md opacity-0 transition-opacity duration-700 h-full hover:shadow-lg hover:transform hover:-translate-y-1",
+                inView && "opacity-100",
                 className
             )}
-            style={{ animationDelay: `${index * 0.1}s` }}
+            style={{ transitionDelay: `${0.2 * (index + 1)}s` }}
             itemScope
             itemType="https://schema.org/SoftwareApplication"
             aria-labelledby={headingId}

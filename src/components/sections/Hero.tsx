@@ -3,6 +3,7 @@ import { AnimatedButton } from "../ui/AnimatedButton";
 export const Hero = () => {
     return (
         <section
+            id="hero"
             className="relative pt-32 pb-20 md:pt-56 md:pb-52 overflow-visible"
             aria-labelledby="hero-heading"
             itemScope

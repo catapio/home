@@ -1,7 +1,10 @@
 "use client";
 
+import { useRef } from "react";
 import { MessageCircleMore, Zap, Volume2 } from "lucide-react";
 import { ProductCard } from "../ui/ProductCard";
+import { useInView } from "react-intersection-observer";
+import { cn } from "@/lib/utils";
 
 const productData = [
     {
@@ -13,6 +16,7 @@ const productData = [
         url: "/produtos/portim",
         applicationCategory: "BusinessApplication",
         operatingSystem: "Web, Cloud",
+        slug: "portim",
     },
     {
         id: "bartes",
@@ -20,9 +24,10 @@ const productData = [
         description:
             "Um software de mensageria escrito em Go, oferecido como SaaS e também disponível para instalação local por ser open-source.",
         status: "concept" as const,
-        url: "/produtos/bartes",
+        url: "/products/bartes",
         applicationCategory: "BusinessApplication",
         operatingSystem: "Web, Cloud, Linux, Windows, MacOS",
+        slug: "bartes",
     },
     {
         id: "audivino",
@@ -30,33 +35,69 @@ const productData = [
         description:
             "Um serviço integrado com WhatsApp para envio de áudios diários ou semanais com mensagens religiosas e motivacionais, com receita destinada a ONGs.",
         status: "development" as const,
-        url: "/produtos/audivino",
+        url: "/products/audivino",
         applicationCategory: "CommunicationApplication",
         operatingSystem: "WhatsApp",
+        slug: "audivino",
     },
 ];
 
 const getProductIcon = (productId: string) => {
     switch (productId) {
         case "portim":
-            return <MessageCircleMore className="w-6 h-6" />;
+            return <MessageCircleMore className="w-6 h-6" aria-hidden="true" />;
         case "bartes":
-            return <Zap className="w-6 h-6" />;
+            return <Zap className="w-6 h-6" aria-hidden="true" />;
         case "audivino":
-            return <Volume2 className="w-6 h-6" />;
+            return <Volume2 className="w-6 h-6" aria-hidden="true" />;
         default:
-            return <MessageCircleMore className="w-6 h-6" />;
+            return <MessageCircleMore className="w-6 h-6" aria-hidden="true" />;
     }
 };
 
 export const Products = () => {
+    const cardsRef = useRef<HTMLElement>(null);
+    const sectionRef = useRef<HTMLElement>(null);
+
+    const { ref: inCardsViewRef, inView: inCardsView } = useInView({
+        threshold: 0.1,
+        triggerOnce: true,
+    });
+
+    const { ref: inSectionViewRef, inView: inSectionView } = useInView({
+        threshold: 0.1,
+        triggerOnce: true,
+    });
+
+    const setCardsRefs = (element: HTMLElement | null) => {
+        if (cardsRef.current !== element) {
+            cardsRef.current = element;
+        }
+        inCardsViewRef(element);
+    };
+
+    const setSectionRefs = (element: HTMLElement | null) => {
+        if (sectionRef.current !== element) {
+            sectionRef.current = element;
+        }
+        inSectionViewRef(element);
+    };
+
     return (
         <section
-            id="produtos"
-            className="py-20 relative overflow-hidden"
+            id="products"
+            ref={setSectionRefs}
+            className={cn(
+                "py-20 relative overflow-visible opacity-0 transition-opacity duration-700",
+                inSectionView && "opacity-100"
+            )}
             aria-labelledby="products-heading"
         >
-            <div className="container mx-auto px-4 md:px-6">
+            {/* Background decoration */}
+            <div className="absolute top-0 right-0 -mt-20 w-96 h-96 bg-catapio-orange/5 rounded-full filter blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 -mb-32 w-80 h-80 bg-catapio-yellow/10 rounded-full filter blur-3xl"></div>
+
+            <div className="container mx-auto px-4 md:px-6 relative z-10">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <div className="inline-block mb-3 px-3 py-1 bg-catapio-yellow/10 rounded-full">
                         <p className="text-sm font-medium text-catapio-yellow">
@@ -70,7 +111,10 @@ export const Products = () => {
                     >
                         Produtos que transformam negócios
                     </h2>
-                    <p className="text-lg text-gray-600" itemProp="description">
+                    <p
+                        className="text-lg text-gray-600 dark:text-gray-300"
+                        itemProp="description"
+                    >
                         Desenvolvemos soluções inovadoras para atender às
                         necessidades do mercado com qualidade e eficiência.
                     </p>
@@ -78,6 +122,7 @@ export const Products = () => {
 
                 <div
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                    ref={setCardsRefs}
                     itemScope
                     itemType="https://schema.org/ItemList"
                 >
@@ -88,10 +133,6 @@ export const Products = () => {
                     <meta
                         itemProp="itemListOrder"
                         content="https://schema.org/ItemListUnordered"
-                    />
-                    <meta
-                        itemProp="itemListElement"
-                        content="https://schema.org/ListItem"
                     />
 
                     {productData.map((product, index) => (
@@ -105,6 +146,10 @@ export const Products = () => {
                                 itemProp="position"
                                 content={(index + 1).toString()}
                             />
+                            <meta
+                                itemProp="url"
+                                content={`https://catap.io/produtos/${product.slug}`}
+                            />
                             <ProductCard
                                 title={product.name}
                                 description={product.description}
@@ -117,6 +162,7 @@ export const Products = () => {
                                 }
                                 operatingSystem={product.operatingSystem}
                                 icon={getProductIcon(product.id)}
+                                inView={inCardsView}
                             />
                         </div>
                     ))}
