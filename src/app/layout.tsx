@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Caveat } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
     variable: "--font-inter",
     subsets: ["latin"],
+});
+
+const caveat = Caveat({
+    variable: "--font-caveat",
+    subsets: ["latin"],
+    display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -89,7 +95,9 @@ export default function RootLayout({
                     crossOrigin="anonymous"
                 />
             </head>
-            <body className={`${inter.variable} antialiased`}>
+            <body
+                className={`${inter.variable} ${caveat.variable} antialiased`}
+            >
                 {children}
                 <script
                     type="application/ld+json"
