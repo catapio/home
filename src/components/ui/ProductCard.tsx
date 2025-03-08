@@ -108,7 +108,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                     {title}
                 </h3>
                 <p
-                    className="text-gray-600 dark:text-gray-300 mb-4 flex-grow"
+                    className="text-gray-600 mb-4 flex-grow"
                     itemProp="description"
                 >
                     {description}

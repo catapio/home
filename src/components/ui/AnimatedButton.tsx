@@ -2,7 +2,8 @@ import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-interface AnimatedButtonProps {
+interface AnimatedButtonProps
+    extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     children: React.ReactNode;
     href?: string;
     variant?: "primary" | "secondary";
@@ -18,6 +19,7 @@ export const AnimatedButton: React.FC<AnimatedButtonProps> = ({
     size = "md",
     className,
     onClick,
+    ...props
 }) => {
     const baseClasses = cn(
         "relative inline-flex items-center justify-center overflow-hidden rounded-md font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2",
@@ -60,7 +62,11 @@ export const AnimatedButton: React.FC<AnimatedButtonProps> = ({
     }
 
     return (
-        <button className={`group ${baseClasses}`} onClick={onClick}>
+        <button
+            {...props}
+            className={`group cursor-pointer ${baseClasses}`}
+            onClick={onClick}
+        >
             <ContentWrapper />
         </button>
     );

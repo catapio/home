@@ -121,10 +121,7 @@ export const Benefits = () => {
                     >
                         Nossos diferenciais
                     </h2>
-                    <p
-                        className="text-lg text-gray-600 dark:text-gray-300"
-                        itemProp="description"
-                    >
+                    <p className="text-lg text-gray-600" itemProp="description">
                         Conheça os motivos que fazem nossas soluções se
                         destacarem no mercado.
                     </p>
@@ -157,6 +154,7 @@ export const Benefits = () => {
                     ))}
                 </div>
             </div>
+            <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-catapio-yellow/10"></div>
         </section>
     );
 };

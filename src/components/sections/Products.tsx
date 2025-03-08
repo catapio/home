@@ -111,10 +111,7 @@ export const Products = () => {
                     >
                         Produtos que transformam negócios
                     </h2>
-                    <p
-                        className="text-lg text-gray-600 dark:text-gray-300"
-                        itemProp="description"
-                    >
+                    <p className="text-lg text-gray-600" itemProp="description">
                         Desenvolvemos soluções inovadoras para atender às
                         necessidades do mercado com qualidade e eficiência.
                     </p>

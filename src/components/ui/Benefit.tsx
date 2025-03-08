@@ -49,10 +49,7 @@ export default function Benefit({
                 >
                     {title}
                 </h3>
-                <p
-                    className="text-gray-600 dark:text-gray-300"
-                    itemProp="description"
-                >
+                <p className="text-gray-600" itemProp="description">
                     {description}
                 </p>
             </div>

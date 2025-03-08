@@ -48,9 +48,9 @@ export const Hero = () => {
                         className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto opacity-0 animate-fade-in"
                         itemProp="description"
                     >
-                        A catap.io foi criada por amigos com a missão de
-                        desenvolver soluções de software que resolvem problemas
-                        complexos de forma elegante e eficiente.
+                        Desenvolvemos software com paixão, exploramos ideias e
+                        buscamos inovação. Cada linha de código é uma nova
+                        oportunidade de criar.
                     </p>
 
                     <div

@@ -91,7 +91,7 @@ export const Navbar = () => {
             className={cn(
                 "fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out py-4",
                 isScrolled
-                    ? "bg-white/80 backdrop-blur-md shadow-sm dark:bg-gray-900/80"
+                    ? "bg-white/80 backdrop-blur-md shadow-sm "
                     : "bg-transparent"
             )}
             role="banner"
@@ -116,7 +116,6 @@ export const Navbar = () => {
                             title="catap.io - Soluções de Software"
                             itemProp="url"
                         >
-                            {/* Uncomment when you have the logo */}
                             <Image
                                 src="/catapio-logo.svg"
                                 alt="Logotipo da catap.io - Empresa de soluções de software"
@@ -191,7 +190,7 @@ export const Navbar = () => {
                 <div
                     id="mobile-menu"
                     className={cn(
-                        "md:hidden fixed inset-x-0 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg transition-all duration-300 ease-in-out overflow-hidden",
+                        "md:hidden fixed inset-x-0 bg-white/95 backdrop-blur-md shadow-lg transition-all duration-300 ease-in-out overflow-hidden",
                         isMobileMenuOpen ? "max-h-screen py-4" : "max-h-0"
                     )}
                     aria-hidden={!isMobileMenuOpen}
