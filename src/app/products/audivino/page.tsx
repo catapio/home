@@ -65,10 +65,6 @@ export default function Audivino() {
             "@type": "Audience",
             audienceType: "Pessoas em busca de conteúdo inspirador",
         },
-        potentialAction: {
-            "@type": "RegisterAction",
-            target: "mailto:audivino@catap.io",
-        },
         additionalProperty: [
             {
                 "@type": "PropertyValue",
@@ -126,7 +122,7 @@ export default function Audivino() {
                                         WhatsApp com impacto social
                                     </p>
                                     <div
-                                        className="inline-block px-3 py-1 bg-purple-100 text-purple-800 rounded-full mb-8"
+                                        className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full mb-8"
                                         itemScope
                                         itemType="https://schema.org/Offer"
                                     >

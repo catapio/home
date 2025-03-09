@@ -1,4 +1,4 @@
-import { Inter, Caveat, Playfair_Display, Playfair } from "next/font/google";
+import { Inter, Caveat, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -57,7 +57,7 @@ export default function RootLayout({
                             logo: "https://catap.io/catapio-logo.svg",
                             description:
                                 "Desenvolvedora de soluções inovadoras de software.",
-                            sameAs: ["https://github.com/catap-io"],
+                            sameAs: ["https://github.com/catapio"],
                             hasOfferCatalog: {
                                 "@type": "OfferCatalog",
                                 name: "Soluções de Software",
