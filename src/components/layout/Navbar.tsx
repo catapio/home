@@ -90,8 +90,8 @@ export const Navbar = () => {
         <header
             className={cn(
                 "fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out py-4",
-                isScrolled
-                    ? "bg-white/80 backdrop-blur-md shadow-sm "
+                isScrolled || isMobileMenuOpen
+                    ? "bg-white/50 backdrop-blur-3xl"
                     : "bg-transparent"
             )}
             role="banner"
@@ -190,8 +190,8 @@ export const Navbar = () => {
                 <div
                     id="mobile-menu"
                     className={cn(
-                        "md:hidden fixed inset-x-0 bg-white/95 backdrop-blur-md shadow-lg transition-all duration-300 ease-in-out overflow-hidden",
-                        isMobileMenuOpen ? "max-h-screen py-4" : "max-h-0"
+                        "md:hidden inset-x-0 bg-transparent transition-all duration-300 ease-in-out overflow-hidden",
+                        isMobileMenuOpen ? "max-h-screen pt-4" : "max-h-0"
                     )}
                     aria-hidden={!isMobileMenuOpen}
                     role="navigation"
