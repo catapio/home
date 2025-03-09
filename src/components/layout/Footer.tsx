@@ -5,7 +5,8 @@ import Image from "next/image";
 import { Mail, MapPin } from "lucide-react";
 import { useEffect, useState } from "react";
 import { SiGithub } from "@icons-pack/react-simple-icons";
-export const Footer = () => {
+
+export function Footer() {
     const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
 
     useEffect(() => {
@@ -31,7 +32,7 @@ export const Footer = () => {
                         >
                             <Image
                                 src="/catapio-logo-footer.svg"
-                                alt="Logotipo da catap.io - Empresa de soluções de software"
+                                alt="Logotipo da catap.io - Desenvolvimento de software"
                                 width={120}
                                 height={40}
                                 priority
@@ -111,7 +112,7 @@ export const Footer = () => {
                             className="font-medium text-lg mb-4 text-white"
                             id="footer-company-heading"
                         >
-                            Empresa
+                            Grupo
                         </h3>
                         <ul
                             className="space-y-3"
@@ -219,4 +220,4 @@ export const Footer = () => {
             </div>
         </footer>
     );
-};
+}

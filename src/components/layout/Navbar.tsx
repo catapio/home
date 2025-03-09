@@ -11,28 +11,23 @@ import Image from "next/image";
 // Define proper section IDs that match with the business description
 const navLinks = [
     {
-        href: "#products",
-        label: "Produtos",
-        description: "Conheça nossas soluções",
-    },
-    {
-        href: "#benefits",
-        label: "Diferenciais",
-        description: "Veja os benefícios de usar as soluções da catap.io",
-    },
-    {
-        href: "#about",
+        href: "/about",
         label: "Sobre Nós",
         description: "Saiba mais sobre a catap.io e nossa missão",
     },
     {
-        href: "#contact",
-        label: "Contato",
-        description: "Entre em contato com a equipe da catap.io",
+        href: "/#products",
+        label: "Produtos",
+        description: "Conheça nossas soluções",
+    },
+    {
+        href: "/#benefits",
+        label: "Diferenciais",
+        description: "Veja os benefícios de usar as soluções da catap.io",
     },
 ] as const;
 
-export const Navbar = () => {
+export function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const pathname = usePathname();
@@ -118,7 +113,7 @@ export const Navbar = () => {
                         >
                             <Image
                                 src="/catapio-logo.svg"
-                                alt="Logotipo da catap.io - Empresa de soluções de software"
+                                alt="Logotipo da catap.io - Desenvolvimento de software"
                                 width={120}
                                 height={40}
                                 priority
@@ -146,10 +141,10 @@ export const Navbar = () => {
                             </div>
                         ))}
                         <AnimatedButton
-                            href="#contact"
-                            aria-label="Iniciar agora com a catap.io - Entre em contato"
+                            href="/#contact"
+                            aria-label="Entre em contato com a catap.io"
                         >
-                            Iniciar
+                            Contato
                         </AnimatedButton>
                     </nav>
 
@@ -210,18 +205,17 @@ export const Navbar = () => {
                                 />
                             </div>
                         ))}
-                        <div className="pt-2 pb-4 flex justify-center">
-                            <AnimatedButton
-                                href="#contact"
-                                onClick={() => setIsMobileMenuOpen(false)}
-                                aria-label="Iniciar agora com a catap.io - Entre em contato"
-                            >
-                                Iniciar
-                            </AnimatedButton>
-                        </div>
                     </nav>
+                    <div className="pt-2 pb-4 flex justify-center">
+                        <AnimatedButton
+                            href="/#contact"
+                            aria-label="Entre em contato com a catap.io"
+                        >
+                            Contato
+                        </AnimatedButton>
+                    </div>
                 </div>
             </div>
         </header>
     );
-};
+}

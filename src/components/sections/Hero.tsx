@@ -1,25 +1,21 @@
 import { AnimatedButton } from "../ui/AnimatedButton";
 
-export const Hero = () => {
+export function Hero() {
     return (
         <section
             id="hero"
-            className="relative pt-32 pb-20 md:pt-56 md:pb-52 overflow-visible"
+            className="relative h-screen flex items-center justify-center overflow-visible"
             aria-labelledby="hero-heading"
             itemScope
             itemType="https://schema.org/WPHeader"
         >
             {/* Background decorations */}
             <div
-                className="absolute bottom-10 md:left-1/2 w-80 h-80 rounded-full bg-catapio-orange/10 filter blur-3xl orb"
+                className="absolute top-20 left-1/4 w-72 h-72 rounded-full bg-catapio-yellow/10 filter blur-3xl"
                 aria-hidden="true"
             ></div>
             <div
-                className="absolute top-20 md:left-1/3 w-72 h-72 rounded-full bg-catapio-yellow/40 filter blur-3xl orb"
-                aria-hidden="true"
-            ></div>
-            <div
-                className="absolute md:left-3/7 w-80 h-80 rounded-full bg-catapio-orange-light/20 filter blur-3xl orb"
+                className="absolute bottom-10 right-1/4 w-80 h-80 rounded-full bg-catapio-orange/10 filter blur-3xl"
                 aria-hidden="true"
             ></div>
 
@@ -66,14 +62,6 @@ export const Hero = () => {
                         >
                             Conheça nossos produtos
                         </AnimatedButton>
-                        <AnimatedButton
-                            href="#contact"
-                            variant="secondary"
-                            size="lg"
-                            aria-label="Entre em contato com a equipe da catap.io"
-                        >
-                            Fale conosco
-                        </AnimatedButton>
                     </div>
                 </div>
             </div>
@@ -82,4 +70,4 @@ export const Hero = () => {
             <div className="absolute bottom-0 left-0 right-0 h-24 bg-[radial-gradient(#f97316_1px,transparent_1px)] [background-size:16px_16px] [mask-image:linear-gradient(to_bottom,transparent,black)]"></div>
         </section>
     );
-};
+}

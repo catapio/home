@@ -12,7 +12,7 @@ interface AnimatedButtonProps
     onClick?: () => void;
 }
 
-export const AnimatedButton: React.FC<AnimatedButtonProps> = ({
+export function AnimatedButton({
     children,
     href,
     variant = "primary",
@@ -20,7 +20,7 @@ export const AnimatedButton: React.FC<AnimatedButtonProps> = ({
     className,
     onClick,
     ...props
-}) => {
+}: AnimatedButtonProps) {
     const baseClasses = cn(
         "relative inline-flex items-center justify-center overflow-hidden rounded-md font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2",
         {
@@ -70,4 +70,4 @@ export const AnimatedButton: React.FC<AnimatedButtonProps> = ({
             <ContentWrapper />
         </button>
     );
-};
+}

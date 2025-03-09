@@ -58,7 +58,7 @@ const benefitsData = [
     },
 ];
 
-export const Benefits = () => {
+export function Benefits() {
     const sectionRef = useRef<HTMLElement>(null);
     const { ref: inSectionViewRef, inView: inSectionView } = useInView({
         threshold: 0.1,
@@ -157,4 +157,4 @@ export const Benefits = () => {
             <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-catapio-yellow/10"></div>
         </section>
     );
-};
+}

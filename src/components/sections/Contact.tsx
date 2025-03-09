@@ -8,7 +8,7 @@ import { CheckCircle } from "lucide-react";
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
-export const CTA = () => {
+export function Contact() {
     const [formState, setFormState] = useState<FormState>("idle");
     const [formData, setFormData] = useState({
         name: "",
@@ -239,4 +239,4 @@ export const CTA = () => {
             </div>
         </section>
     );
-};
+}

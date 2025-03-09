@@ -3,7 +3,6 @@
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { useEffect } from "react";
 
 interface ProductCardProps {
     title: string;
@@ -31,7 +30,7 @@ const statusText = {
     development: "Em Desenvolvimento",
 };
 
-export const ProductCard: React.FC<ProductCardProps> = ({
+export function ProductCard({
     title,
     description,
     icon,
@@ -43,7 +42,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     applicationCategory = "BusinessApplication",
     operatingSystem = "Web",
     inView,
-}) => {
+}: ProductCardProps) {
     const isAvailable = status === "active";
     const availabilityStatus = isAvailable
         ? "https://schema.org/InStock"
@@ -129,4 +128,4 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             </div>
         </article>
     );
-};
+}
