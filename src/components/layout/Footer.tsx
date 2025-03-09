@@ -135,6 +135,14 @@ export function Footer() {
                                     Diferenciais
                                 </Link>
                             </li>
+                            <li>
+                                <Link
+                                    href="/privacyPolicy"
+                                    className="text-sm text-gray-300 hover:text-catapio-yellow transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-catapio-yellow focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900"
+                                >
+                                    Política de Privacidade
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 

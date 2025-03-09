@@ -1,0 +1,6 @@
+# Permite todos os robôs de busca
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://catap.io/sitemap.xml

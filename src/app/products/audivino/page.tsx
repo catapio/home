@@ -1,4 +1,3 @@
-import { Navbar } from "@/components/layout/Navbar";
 import { AnimatedButton } from "@/components/ui/AnimatedButton";
 import { Music, Heart } from "lucide-react";
 import { Metadata } from "next";

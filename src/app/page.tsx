@@ -67,12 +67,74 @@ export const metadata: Metadata = {
     },
 };
 export default function Home() {
+    // Dados estruturados para o website e navegação
+    const websiteJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: "catap.io",
+        url: "https://catap.io",
+        potentialAction: {
+            "@type": "SearchAction",
+            target: "https://catap.io/search?q={search_term_string}",
+            "query-input": "required name=search_term_string",
+        },
+    };
+
+    const navigationJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        itemListElement: [
+            {
+                "@type": "ListItem",
+                position: 1,
+                name: "Sobre Nós",
+                item: "https://catap.io/about",
+            },
+            {
+                "@type": "ListItem",
+                position: 2,
+                name: "Portim",
+                item: "https://catap.io/products/portim",
+            },
+            {
+                "@type": "ListItem",
+                position: 3,
+                name: "Bartes",
+                item: "https://catap.io/products/bartes",
+            },
+            {
+                "@type": "ListItem",
+                position: 4,
+                name: "Audivino",
+                item: "https://catap.io/products/audivino",
+            },
+        ],
+    };
+
     return (
-        <main className="flex-grow">
-            <Hero />
-            <Products />
-            <Benefits />
-            <Contact />
-        </main>
+        <>
+            {/* JSON-LD para dados estruturados do website */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(websiteJsonLd),
+                }}
+            />
+
+            {/* JSON-LD para navegação do site */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(navigationJsonLd),
+                }}
+            />
+
+            <main className="flex-grow">
+                <Hero />
+                <Products />
+                <Benefits />
+                <Contact />
+            </main>
+        </>
     );
 }

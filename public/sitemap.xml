@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home Page -->
+  <url>
+    <loc>https://catap.io/</loc>
+    <lastmod>2025-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://catap.io/about</loc>
+    <lastmod>2025-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Products Page - Portim -->
+  <url>
+    <loc>https://catap.io/products/portim</loc>
+    <lastmod>2025-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Products Page - Bartes -->
+  <url>
+    <loc>https://catap.io/products/bartes</loc>
+    <lastmod>2025-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Products Page - Audivino -->
+  <url>
+    <loc>https://catap.io/products/audivino</loc>
+    <lastmod>2025-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
