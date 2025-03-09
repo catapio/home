@@ -87,7 +87,7 @@ export default function Bartes() {
                 >
                     {/* Hero Section */}
                     <section
-                        className="py-20 md:py-28 bg-gradient-to-br from-white to-gray-100"
+                        className="py-20 md:py-28"
                         itemScope
                         itemType="https://schema.org/SoftwareApplication"
                     >
