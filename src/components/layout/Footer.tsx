@@ -85,7 +85,7 @@ export const Footer = () => {
                             </li>
                             <li>
                                 <Link
-                                    href="#produtos"
+                                    href="#products"
                                     className="text-sm text-gray-300 hover:text-catapio-yellow transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-catapio-yellow focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900"
                                 >
                                     Bartes
@@ -120,7 +120,7 @@ export const Footer = () => {
                         >
                             <li>
                                 <Link
-                                    href="#sobre"
+                                    href="#about"
                                     className="text-sm text-gray-300 hover:text-catapio-yellow transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-catapio-yellow focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900"
                                 >
                                     Sobre nós
@@ -128,7 +128,7 @@ export const Footer = () => {
                             </li>
                             <li>
                                 <Link
-                                    href="#diferenciais"
+                                    href="#benefits"
                                     className="text-sm text-gray-300 hover:text-catapio-yellow transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-catapio-yellow focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900"
                                 >
                                     Diferenciais
@@ -158,7 +158,7 @@ export const Footer = () => {
                                     aria-hidden="true"
                                 />
                                 <a
-                                    href="mailto:contato@catap.io"
+                                    href="mailto:contact@catap.io"
                                     className="text-sm text-gray-300 hover:text-catapio-yellow transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-catapio-yellow focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900"
                                     itemProp="email"
                                 >

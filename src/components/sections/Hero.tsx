@@ -60,14 +60,14 @@ export const Hero = () => {
                         itemType="https://schema.org/SearchAction"
                     >
                         <AnimatedButton
-                            href="#produtos"
+                            href="#products"
                             size="lg"
                             aria-label="Conheça nossos produtos de software"
                         >
                             Conheça nossos produtos
                         </AnimatedButton>
                         <AnimatedButton
-                            href="#contato"
+                            href="#contact"
                             variant="secondary"
                             size="lg"
                             aria-label="Entre em contato com a equipe da catap.io"

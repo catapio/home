@@ -49,7 +49,7 @@ export const metadata: Metadata = {
         siteName: "catap.io",
         images: [
             {
-                url: "/images/og-image.jpg",
+                url: "/og-image.png",
                 width: 1200,
                 height: 630,
                 alt: "catap.io - Soluções de Software",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
         title: "catap.io | Soluções Inovadoras de Software",
         description:
             "Desenvolvemos soluções inovadoras de software, como gerenciamento e distribuição de mensagens entre plataformas.",
-        images: ["/images/twitter-image.jpg"],
+        images: ["/twitter-image.png"],
     },
     robots: {
         index: true,
@@ -107,7 +107,7 @@ export default function RootLayout({
                             "@type": "Organization",
                             name: "catap.io",
                             url: "https://catap.io",
-                            logo: "https://catap.io/logo.png",
+                            logo: "https://catap.io/catapio-logo.svg",
                             description:
                                 "Desenvolvedora de soluções inovadoras de software.",
                             sameAs: ["https://github.com/catap-io"],
@@ -121,7 +121,7 @@ export default function RootLayout({
                                         applicationCategory:
                                             "BusinessApplication",
                                         description:
-                                            "API para gerenciamento de fluxos de entrada e saída de mensagens, permitindo configuração flexível das interfaces de comunicação.",
+                                            "Uma API responsável por gerenciar fluxos de entrada e saída de mensagens, com configuração flexível das interfaces de comunicação.",
                                     },
                                     {
                                         "@type": "SoftwareApplication",
@@ -129,7 +129,7 @@ export default function RootLayout({
                                         applicationCategory:
                                             "BusinessApplication",
                                         description:
-                                            "Software de mensageria semelhante ao Kafka, porém escrito em Go. Disponível como SaaS e instalação local por ser open-source.",
+                                            "Um software de mensageria escrito em Go, oferecido como SaaS e também disponível para instalação local por ser open-source.",
                                         offers: {
                                             "@type": "Offer",
                                             availability:
@@ -142,7 +142,7 @@ export default function RootLayout({
                                         applicationCategory:
                                             "BusinessApplication",
                                         description:
-                                            "Serviço integrado com WhatsApp para envio de áudios diários ou semanais com mensagens religiosas e motivacionais.",
+                                            "Um serviço integrado com WhatsApp para envio de áudios diários ou semanais com mensagens religiosas e motivacionais, com receita destinada a ONGs.",
                                         offers: {
                                             "@type": "Offer",
                                             availability:

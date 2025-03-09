@@ -13,7 +13,7 @@ const productData = [
         description:
             "Uma API responsável por gerenciar fluxos de entrada e saída de mensagens, com configuração flexível das interfaces de comunicação.",
         status: "active" as const,
-        url: "/produtos/portim",
+        url: "/products/portim",
         applicationCategory: "BusinessApplication",
         operatingSystem: "Web, Cloud",
         slug: "portim",
@@ -145,7 +145,7 @@ export const Products = () => {
                             />
                             <meta
                                 itemProp="url"
-                                content={`https://catap.io/produtos/${product.slug}`}
+                                content={`https://catap.io/products/${product.slug}`}
                             />
                             <ProductCard
                                 title={product.name}
