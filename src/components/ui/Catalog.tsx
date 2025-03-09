@@ -1,6 +1,6 @@
 "use client";
 
-import { MessageCircleMore, Volume2, Zap } from "lucide-react";
+import { MessageCircleMore, MessageSquare, Volume2, Zap } from "lucide-react";
 import { ProductCard } from "./ProductCard";
 
 const productData = [
@@ -9,7 +9,7 @@ const productData = [
         name: "Portim",
         description:
             "Uma API responsável por gerenciar fluxos de entrada e saída de mensagens, com configuração flexível das interfaces de comunicação.",
-        status: "active" as const,
+        status: "beta" as const,
         url: "/products/portim",
         applicationCategory: "BusinessApplication",
         operatingSystem: "Web, Cloud",
@@ -42,7 +42,7 @@ const productData = [
 const getProductIcon = (productId: string) => {
     switch (productId) {
         case "portim":
-            return <MessageCircleMore className="w-6 h-6" aria-hidden="true" />;
+            return <MessageSquare className="w-6 h-6" aria-hidden="true" />;
         case "bartes":
             return <Zap className="w-6 h-6" aria-hidden="true" />;
         case "audivino":

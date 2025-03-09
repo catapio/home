@@ -30,14 +30,14 @@ export const metadata: Metadata = {
         title: "catap.io | Transformando ideias em soluções",
         description:
             "Conheça a história, filosofia e produtos da catap.io. Somos apaixonados em tecnologia e transformar ideias em soluções inovadoras.",
-        images: ["https://catap.io/og-image.png"],
+        images: ["https://catap.io/twitter-image.png"],
     },
     alternates: {
         canonical: "https://catap.io/about",
     },
 };
 
-const AboutUs = () => {
+export default function AboutUs() {
     // Dados estruturados JSON-LD para SEO
     const jsonLd = {
         "@context": "https://schema.org",
@@ -85,6 +85,4 @@ const AboutUs = () => {
             </main>
         </>
     );
-};
-
-export default AboutUs;
+}

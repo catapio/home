@@ -1,4 +1,4 @@
-import { Inter, Caveat } from "next/font/google";
+import { Inter, Caveat, Playfair_Display, Playfair } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -10,6 +10,12 @@ const inter = Inter({
 
 const caveat = Caveat({
     variable: "--font-caveat",
+    subsets: ["latin"],
+    display: "swap",
+});
+
+const playfair = Playfair_Display({
+    variable: "--font-playfair",
     subsets: ["latin"],
     display: "swap",
 });
@@ -35,7 +41,7 @@ export default function RootLayout({
                 />
             </head>
             <body
-                className={`${inter.variable} ${caveat.variable} antialiased min-h-screen flex flex-col`}
+                className={`${inter.variable} ${caveat.variable} ${playfair.variable} antialiased min-h-screen flex flex-col`}
             >
                 <Navbar />
                 {children}

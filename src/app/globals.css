@@ -128,6 +128,10 @@
         content: "";
         @apply absolute bottom-2 md:bottom-3 left-0 w-full h-2 -z-10 bg-catapio-yellow/70 rounded;
     }
+
+    .verse-text {
+        font-family: var(--font-playfair);
+    }
 }
 
 html {
