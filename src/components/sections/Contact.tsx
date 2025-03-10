@@ -37,29 +37,30 @@ export function Contact() {
         setFormData((prev) => ({ ...prev, [name]: value }));
     };
 
-    // function to handle form submission
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        // simulate API call
         setFormState("submitting");
 
         try {
-            // simulate API call
-            await new Promise((resolve) => setTimeout(resolve, 1500));
+            const response = await fetch("/api/send-email", {
+                method: "POST",
+                body: JSON.stringify(formData),
+            });
 
-            // success
+            if (!response.ok) {
+                throw new Error("failed to send email");
+            }
+
             setFormState("success");
             setFormData({ name: "", email: "", message: "" });
 
-            // reset state after 5 seconds
             setTimeout(() => {
                 setFormState("idle");
             }, 5000);
         } catch (error) {
             setFormState("error");
 
-            // reset state after 5 seconds
             setTimeout(() => {
                 setFormState("idle");
             }, 5000);
