@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function PrivacyPolicy() {
     return (
         <div className="min-h-screen flex flex-col">
@@ -178,13 +180,14 @@ export default function PrivacyPolicy() {
                                 Se você tiver dúvidas ou preocupações sobre esta
                                 Política de Privacidade ou nossas práticas de
                                 tratamento de dados, entre em contato conosco
-                                pelo e-mail:{" "}
-                                <a
-                                    href="mailto:contact@catap.io"
+                                pelo{" "}
+                                <Link
+                                    href="/#contact"
                                     className="text-catapio-orange hover:underline"
                                 >
-                                    contact@catap.io
-                                </a>
+                                    formulário de contato
+                                </Link>
+                                .
                             </p>
                         </div>
                     </div>

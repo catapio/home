@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { useEffect, useState } from "react";
 import { SiGithub } from "@icons-pack/react-simple-icons";
 
@@ -161,19 +161,6 @@ export function Footer() {
                             itemScope
                             itemType="https://schema.org/ContactPoint"
                         >
-                            <li className="flex items-center">
-                                <Mail
-                                    className="h-4 w-4 mr-2 text-catapio-yellow"
-                                    aria-hidden="true"
-                                />
-                                <a
-                                    href="mailto:contact@catap.io"
-                                    className="text-sm text-gray-300 hover:text-catapio-yellow transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-catapio-yellow focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900"
-                                    itemProp="email"
-                                >
-                                    contact@catap.io
-                                </a>
-                            </li>
                             <li className="flex items-start">
                                 <MapPin
                                     className="h-4 w-4 mr-2 mt-1 text-catapio-yellow"
