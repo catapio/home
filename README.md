@@ -1,10 +1,10 @@
-# Catap.io - Official Website
+# catap.io - Official Website
 
-Welcome to the official repository for the Catap.io website. This project showcases our vision, products, and mission, built using modern web technologies.
+Welcome to the official repository for the catap.io website. This project showcases our vision, products, and mission, built using modern web technologies.
 
-## About Catap.io
+## About catap.io
 
-Catap.io is a collaborative initiative by a group of technology enthusiasts passionate about exploring new ideas and developing innovative software solutions. Our goal is to experiment, innovate, and transform concepts into impactful projects.
+**catap.io** is a collaborative initiative by a group of technology enthusiasts passionate about exploring new ideas and developing innovative software solutions. Our goal is to experiment, innovate, and transform concepts into impactful projects.
 
 ### Our Products
 
