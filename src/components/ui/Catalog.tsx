@@ -10,10 +10,9 @@ const productData = [
         description:
             "Uma API responsável por gerenciar fluxos de entrada e saída de mensagens, com configuração flexível das interfaces de comunicação.",
         status: "beta" as const,
-        url: "/products/portim",
         applicationCategory: "BusinessApplication",
         operatingSystem: "Web, Cloud",
-        slug: "portim",
+        endpoint: "https://catap.io/products/portim",
     },
     {
         id: "bartes",
@@ -21,10 +20,9 @@ const productData = [
         description:
             "Um software de mensageria escrito em Go, oferecido como SaaS e também disponível para instalação local por ser open-source.",
         status: "concept" as const,
-        url: "/products/bartes",
         applicationCategory: "BusinessApplication",
         operatingSystem: "Web, Cloud, Linux, Windows, MacOS",
-        slug: "bartes",
+        endpoint: "https://catap.io/products/bartes",
     },
     {
         id: "audivino",
@@ -32,10 +30,9 @@ const productData = [
         description:
             "Um serviço integrado com WhatsApp para envio de áudios diários ou semanais com mensagens religiosas e motivacionais, com receita destinada a ONGs.",
         status: "development" as const,
-        url: "/products/audivino",
         applicationCategory: "CommunicationApplication",
         operatingSystem: "WhatsApp",
-        slug: "audivino",
+        endpoint: "https://audivino.catap.io",
     },
 ];
 
@@ -86,15 +83,12 @@ export default function Catalog({
                         itemProp="position"
                         content={(index + 1).toString()}
                     />
-                    <meta
-                        itemProp="url"
-                        content={`https://catap.io/products/${product.slug}`}
-                    />
+                    <meta itemProp="url" content={product.endpoint} />
                     <ProductCard
                         title={product.name}
                         description={product.description}
                         status={product.status}
-                        url={product.url}
+                        url={product.endpoint}
                         index={index}
                         productId={product.id}
                         applicationCategory={product.applicationCategory}
