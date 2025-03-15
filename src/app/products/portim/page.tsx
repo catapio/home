@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 // SEO metadata
 export const metadata: Metadata = {
-    title: "Portim | API de Mensageria para Integração de Sistemas | catap.io",
+    title: "Portim | API de Mensageria para Integração de Sistemas | Catapio",
     description:
         "Portim é uma API robusta para gerenciar fluxos de entrada e saída de mensagens, permitindo integrações flexíveis entre diversos sistemas.",
     openGraph: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
         description:
             "Portim é uma API robusta para gerenciar fluxos de entrada e saída de mensagens, permitindo integrações flexíveis entre diversos sistemas.",
         url: "https://catap.io/products/portim",
-        siteName: "catap.io",
+        siteName: "Catapio",
         type: "website",
         locale: "pt_BR",
         images: [
@@ -40,6 +40,8 @@ export const metadata: Metadata = {
         "fluxo de mensagens",
         "portim",
         "catap.io",
+        "Catapio",
+        "catapio",
         "webhook",
         "gestão de filas",
     ],
@@ -56,7 +58,7 @@ export default function Portim() {
         logo: "https://catap.io/catapio-logo.svg",
         brand: {
             "@type": "Brand",
-            name: "catap.io",
+            name: "Catapio",
         },
         category: "Software as a Service",
         applicationCategory: "BusinessApplication",
@@ -121,6 +123,7 @@ export default function Portim() {
                                     <div
                                         className="inline-block px-3 py-1 bg-purple-100 text-purple-800 rounded-full mb-8"
                                         itemScope
+                                        itemType="https://schema.org/Offer"
                                     >
                                         <meta itemProp="availability" />
                                         <span className="text-sm font-medium">

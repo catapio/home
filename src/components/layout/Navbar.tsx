@@ -13,7 +13,7 @@ const navLinks = [
     {
         href: "/about",
         label: "Sobre Nós",
-        description: "Saiba mais sobre a catap.io e nossa missão",
+        description: "Saiba mais sobre a Catapio e nossa missão",
     },
     {
         href: "/#products",
@@ -23,7 +23,7 @@ const navLinks = [
     {
         href: "/#benefits",
         label: "Diferenciais",
-        description: "Veja os benefícios de usar as soluções da catap.io",
+        description: "Veja os benefícios de usar as soluções da Catapio",
     },
 ] as const;
 
@@ -90,7 +90,7 @@ export function Navbar() {
                     : "bg-transparent"
             )}
             role="banner"
-            aria-label="Cabeçalho principal do site catap.io"
+            aria-label="Cabeçalho principal do site Catapio"
             itemScope
             itemType="https://schema.org/WPHeader"
         >
@@ -107,13 +107,13 @@ export function Navbar() {
                                 "flex items-center space-x-2",
                                 "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-catapio-orange"
                             )}
-                            aria-label="Página inicial da catap.io"
-                            title="catap.io - Soluções de Software"
+                            aria-label="Página inicial da Catapio"
+                            title="Catapio - Soluções de Software"
                             itemProp="url"
                         >
                             <Image
                                 src="/catapio-logo.svg"
-                                alt="Logotipo da catap.io - Desenvolvimento de software"
+                                alt="Logotipo da Catapio - Desenvolvimento de software"
                                 width={120}
                                 height={40}
                                 priority
@@ -142,7 +142,7 @@ export function Navbar() {
                         ))}
                         <AnimatedButton
                             href="/#contact"
-                            aria-label="Entre em contato com a catap.io"
+                            aria-label="Entre em contato com a Catapio"
                         >
                             Contato
                         </AnimatedButton>
@@ -209,7 +209,7 @@ export function Navbar() {
                     <div className="pt-2 pb-4 flex justify-center">
                         <AnimatedButton
                             href="/#contact"
-                            aria-label="Entre em contato com a catap.io"
+                            aria-label="Entre em contato com a Catapio"
                         >
                             Contato
                         </AnimatedButton>

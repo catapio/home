@@ -5,15 +5,15 @@ import { Metadata } from "next";
 
 // SEO metadata
 export const metadata: Metadata = {
-    title: "catap.io | Transformando ideias em soluções",
+    title: "Catapio | Transformando ideias em soluções",
     description:
-        "Conheça a história, filosofia e produtos da catap.io. Somos apaixonados em tecnologia e transformar ideias em soluções inovadoras.",
+        "Conheça a história, filosofia e produtos da Catapio. Somos apaixonados em tecnologia e transformar ideias em soluções inovadoras.",
     openGraph: {
-        title: "catap.io | Transformando ideias em soluções",
+        title: "Catapio | Transformando ideias em soluções",
         description:
-            "Conheça a história, filosofia e produtos da catap.io. Somos apaixonados em tecnologia e transformar ideias em soluções inovadoras.",
+            "Conheça a história, filosofia e produtos da Catapio. Somos apaixonados em tecnologia e transformar ideias em soluções inovadoras.",
         url: "https://catap.io/about",
-        siteName: "catap.io",
+        siteName: "Catapio",
         type: "website",
         locale: "pt_BR",
         images: [
@@ -21,15 +21,15 @@ export const metadata: Metadata = {
                 url: "https://catap.io/og-image.png",
                 width: 1200,
                 height: 630,
-                alt: "catap.io - Sobre nós",
+                alt: "Catapio - Sobre nós",
             },
         ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "catap.io | Transformando ideias em soluções",
+        title: "Catapio | Transformando ideias em soluções",
         description:
-            "Conheça a história, filosofia e produtos da catap.io. Somos apaixonados em tecnologia e transformar ideias em soluções inovadoras.",
+            "Conheça a história, filosofia e produtos da Catapio. Somos apaixonados em tecnologia e transformar ideias em soluções inovadoras.",
         images: ["https://catap.io/twitter-image.png"],
     },
     alternates: {
@@ -44,28 +44,15 @@ export default function AboutUs() {
         "@type": "AboutPage",
         mainEntity: {
             "@type": "Organization",
-            name: "catap.io",
+            name: "Catapio",
             description:
-                "A catap.io nasceu da união de amigos apaixonados por tecnologia e inovação, com o desejo de criar soluções que realmente fazem a diferença.",
+                "A Catapio nasceu da união de amigos apaixonados por tecnologia e inovação, com o desejo de criar soluções que realmente fazem a diferença.",
             url: "https://catap.io",
-            foundingDate: "2022",
+            foundingDate: "2025",
             logo: "https://catap.io/catapio-logo.svg",
             address: {
                 "@type": "PostalAddress",
                 addressCountry: "BR",
-            },
-            hasOfferCatalog: {
-                "@type": "OfferCatalog",
-                name: "Produtos catap.io",
-                itemListElement: [
-                    {
-                        "@type": "Offer",
-                        itemOffered: {
-                            "@type": "Product",
-                            name: "Inovação em Software",
-                        },
-                    },
-                ],
             },
         },
     };

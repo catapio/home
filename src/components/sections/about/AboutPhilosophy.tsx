@@ -53,7 +53,7 @@ export function AboutPhilosophy() {
                         Nossa Filosofia
                     </h2>
                     <p className="text-lg text-gray-600" itemProp="description">
-                        Na catap.io, somos guiados por valores fundamentais que
+                        Na Catapio, somos guiados por valores fundamentais que
                         definem nossa abordagem para criar softwares que fazem a
                         diferença:
                     </p>
@@ -109,7 +109,7 @@ export function AboutPhilosophy() {
                     </p>
                     <AnimatedButton
                         href="/#contact"
-                        aria-label="Entre em contato com a equipe da catap.io"
+                        aria-label="Entre em contato com a equipe da Catapio"
                     >
                         Entre em Contato
                     </AnimatedButton>

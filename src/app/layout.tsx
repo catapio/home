@@ -52,7 +52,7 @@ export default function RootLayout({
                         __html: JSON.stringify({
                             "@context": "https://schema.org",
                             "@type": "Organization",
-                            name: "catap.io",
+                            name: "Catapio",
                             url: "https://catap.io",
                             logo: "https://catap.io/catapio-logo.svg",
                             description:

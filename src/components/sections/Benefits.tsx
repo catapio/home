@@ -111,7 +111,7 @@ export function Benefits() {
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <div className="inline-block mb-3 px-3 py-1 bg-catapio-orange/10 rounded-full">
                         <p className="text-sm font-medium text-catapio-orange">
-                            Por que escolher a catap.io
+                            Por que escolher a Catapio
                         </p>
                     </div>
                     <h2

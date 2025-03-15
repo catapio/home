@@ -30,7 +30,7 @@ export function AboutProducts() {
                         Nossos Produtos
                     </h2>
                     <p className="text-lg text-gray-600" itemProp="description">
-                        Atualmente, a catap.io conta com três produtos
+                        Atualmente, a Catapio conta com três produtos
                         principais, cada um desenvolvido para resolver problemas
                         específicos:
                     </p>

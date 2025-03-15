@@ -58,7 +58,7 @@ export async function POST(request: Request) {
         await transporter.sendMail({
             from: `"${name} | ${email}" <${process.env.EMAIL_USER}>`,
             to: process.env.EMAIL_TO,
-            subject: "New contact from catap.io landing page",
+            subject: "New contact from Catapio landing page",
             text: message,
             html: `<p>${message}</p>`,
         });

@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 // SEO metadata
 export const metadata: Metadata = {
-    title: "Bartes | Software de Mensageria Open Source inspirado no Kafka | catap.io",
+    title: "Bartes | Software de Mensageria Open Source inspirado no Kafka | Catapio",
     description:
         "Bartes é um software de mensageria escrito em Go, inspirado no Kafka, oferecido como SaaS e também disponível open-source.",
     openGraph: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
         description:
             "Bartes é um software de mensageria escrito em Go, inspirado no Kafka, oferecido como SaaS e também disponível open-source.",
         url: "https://catap.io/products/bartes",
-        siteName: "catap.io",
+        siteName: "Catapio",
         type: "website",
         locale: "pt_BR",
         images: [
@@ -41,6 +41,8 @@ export const metadata: Metadata = {
         "open source",
         "bartes",
         "catap.io",
+        "Catapio",
+        "catapio",
         "distributed systems",
         "go",
     ],
@@ -64,7 +66,7 @@ export default function Bartes() {
         softwareRequirements: "Go 1.23+",
         author: {
             "@type": "Organization",
-            name: "catap.io",
+            name: "Catapio",
             url: "https://catap.io",
         },
         license: "MIT",
@@ -119,10 +121,7 @@ export default function Bartes() {
                                         itemScope
                                         itemType="https://schema.org/Offer"
                                     >
-                                        <meta
-                                            itemProp="availability"
-                                            content="https://schema.org/ComingSoon"
-                                        />
+                                        <meta itemProp="availability" />
                                         <span className="text-sm font-medium">
                                             Conceitual
                                         </span>

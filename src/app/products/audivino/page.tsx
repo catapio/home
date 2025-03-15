@@ -12,7 +12,7 @@ export const metadata: Metadata = {
         description:
             "Audivino envia áudios diários ou semanais com mensagens religiosas e motivacionais via WhatsApp, com parte da receita destinada a instituições de caridade.",
         url: "https://catap.io/products/audivino",
-        siteName: "catap.io",
+        siteName: "Catapio",
         type: "website",
         locale: "pt_BR",
         images: [
@@ -43,6 +43,8 @@ export const metadata: Metadata = {
         "caridade",
         "audivino",
         "catap.io",
+        "catapio",
+        "Catapio",
     ],
 };
 
@@ -58,7 +60,7 @@ export default function Audivino() {
         url: "https://catap.io/products/audivino",
         brand: {
             "@type": "Brand",
-            name: "catap.io",
+            name: "Catapio",
         },
         category: "Mobile App",
         audience: {
@@ -384,10 +386,7 @@ export default function Audivino() {
                                     Acessar o Site
                                 </span>
                             </AnimatedButton>
-                            <meta
-                                itemProp="email"
-                                content="audivino@catap.io"
-                            />
+                            <meta itemProp="email" content="contact@catap.io" />
                             <meta
                                 itemProp="availableLanguage"
                                 content="Portuguese"

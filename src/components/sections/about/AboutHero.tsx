@@ -33,7 +33,7 @@ export function AboutHero() {
                             className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-6"
                             itemProp="description"
                         >
-                            A catap.io nasceu da união de amigos apaixonados por
+                            A Catapio nasceu da união de amigos apaixonados por
                             tecnologia e inovação, com o desejo de criar
                             soluções que realmente fazem a diferença.
                         </p>

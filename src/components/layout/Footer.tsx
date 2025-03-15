@@ -29,11 +29,11 @@ export function Footer() {
                             <Link
                                 href="/"
                                 className="inline-block mb-4"
-                                aria-label="Voltar para página inicial da catap.io"
+                                aria-label="Voltar para página inicial da Catapio"
                             >
                                 <Image
                                     src="/catapio-logo-footer.svg"
-                                    alt="Logotipo da catap.io - Desenvolvimento de software"
+                                    alt="Logotipo da Catapio - Desenvolvimento de software"
                                     width={120}
                                     height={40}
                                     priority
@@ -52,9 +52,9 @@ export function Footer() {
 
                             {/* structured information hidden for SEO */}
                             <div className="hidden" aria-hidden="true">
-                                <span itemProp="name">catap.io</span>
+                                <span itemProp="name">Catapio</span>
                                 <span itemProp="legalName">
-                                    catap.io Desenvolvimento de Software
+                                    Catapio Desenvolvimento de Software
                                 </span>
                                 <time itemProp="foundingDate" dateTime="2025">
                                     2025
@@ -205,7 +205,7 @@ export function Footer() {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-gray-400 hover:text-catapio-yellow transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-catapio-yellow focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900"
-                                        aria-label="GitHub da catap.io (abre em nova janela)"
+                                        aria-label="GitHub da Catapio (abre em nova janela)"
                                     >
                                         <SiGithub
                                             className="h-5 w-5"
@@ -220,11 +220,11 @@ export function Footer() {
                     {/* footer copyright */}
                     <div className="pt-8 mt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
                         <p>
-                            &copy; {currentYear} catap.io. Todos os direitos
+                            &copy; {currentYear} Catapio. Todos os direitos
                             reservados.
                         </p>
                         <p className="mt-4 md:mt-0">
-                            Desenvolvido com ♥ pela catap.io
+                            Desenvolvido com ♥ pela Catapio
                         </p>
                     </div>
                 </div>

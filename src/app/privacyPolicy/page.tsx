@@ -22,7 +22,7 @@ export default function PrivacyPolicy() {
                                 1. Introdução
                             </h2>
                             <p className="mb-4">
-                                A catap.io está comprometida em proteger sua
+                                A Catapio está comprometida em proteger sua
                                 privacidade. Esta Política de Privacidade
                                 explica como coletamos, usamos, divulgamos e
                                 salvaguardamos suas informações quando você
