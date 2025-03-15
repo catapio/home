@@ -77,11 +77,6 @@ export default function RootLayout({
                                             "BusinessApplication",
                                         description:
                                             "Um software de mensageria escrito em Go, oferecido como SaaS e também disponível para instalação local por ser open-source.",
-                                        offers: {
-                                            "@type": "Offer",
-                                            availability:
-                                                "https://schema.org/ComingSoon",
-                                        },
                                     },
                                     {
                                         "@type": "SoftwareApplication",
@@ -90,11 +85,6 @@ export default function RootLayout({
                                             "BusinessApplication",
                                         description:
                                             "Um serviço integrado com WhatsApp para envio de áudios diários ou semanais com mensagens religiosas e motivacionais, com receita destinada a ONGs.",
-                                        offers: {
-                                            "@type": "Offer",
-                                            availability:
-                                                "https://schema.org/ComingSoon",
-                                        },
                                     },
                                 ],
                             },

@@ -45,11 +45,6 @@ export function ProductCard({
     operatingSystem = "Web",
     inView,
 }: ProductCardProps) {
-    const isAvailable = status === "active";
-    const availabilityStatus = isAvailable
-        ? "https://schema.org/InStock"
-        : "https://schema.org/ComingSoon";
-
     const headingId = `product-${productId}-heading`;
 
     return (
@@ -72,15 +67,7 @@ export function ProductCard({
             />
             <meta itemProp="operatingSystem" content={operatingSystem} />
             <meta itemProp="identifier" content={productId} />
-            <meta itemProp="url" content={`https://catap.io${url}`} />
-
-            <div
-                itemProp="offers"
-                itemScope
-                itemType="https://schema.org/Offer"
-            >
-                <meta itemProp="availability" content={availabilityStatus} />
-            </div>
+            <meta itemProp="url" content={url} />
 
             <div className="p-6 flex flex-col h-full">
                 <div className="flex justify-between items-start mb-4">
