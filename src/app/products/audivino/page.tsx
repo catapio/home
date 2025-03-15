@@ -128,10 +128,7 @@ export default function Audivino() {
                                         itemScope
                                         itemType="https://schema.org/Offer"
                                     >
-                                        <meta
-                                            itemProp="availability"
-                                            content="https://schema.org/PreOrder"
-                                        />
+                                        <meta itemProp="availability" />
                                         <span className="text-sm font-medium">
                                             Em desenvolvimento
                                         </span>
