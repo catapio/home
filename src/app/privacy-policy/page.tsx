@@ -1,5 +1,11 @@
 import Link from "next/link";
 
+export const metadata = {
+    title: "Política de Privacidade | Catapio",
+    description:
+        "Política de privacidade e condições para utilização dos serviços da Catapio",
+};
+
 export default function PrivacyPolicy() {
     return (
         <div className="min-h-screen flex flex-col">
@@ -14,7 +20,7 @@ export default function PrivacyPolicy() {
                             <p className="mb-6">
                                 Última atualização:{" "}
                                 {new Date(
-                                    "2025-03-09T03:00:00"
+                                    "2025-03-09T03:00:00Z"
                                 ).toLocaleDateString("pt-BR")}
                             </p>
 

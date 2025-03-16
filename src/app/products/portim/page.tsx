@@ -63,6 +63,13 @@ export default function Portim() {
         category: "Software as a Service",
         applicationCategory: "BusinessApplication",
         releaseDate: "2025",
+        aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "5",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "1",
+        },
         additionalProperty: [
             {
                 "@type": "PropertyValue",

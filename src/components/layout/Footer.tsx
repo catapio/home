@@ -139,7 +139,7 @@ export function Footer() {
                                 </li>
                                 <li>
                                     <Link
-                                        href="/privacyPolicy"
+                                        href="/privacy-policy"
                                         className="text-sm text-gray-300 hover:text-catapio-yellow transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-catapio-yellow focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900"
                                     >
                                         Política de Privacidade
@@ -224,7 +224,7 @@ export function Footer() {
                             reservados.
                         </p>
                         <p className="mt-4 md:mt-0">
-                            Desenvolvido com ♥ pela Catapio
+                            Desenvolvido com ♥ por Catapio
                         </p>
                     </div>
                 </div>
